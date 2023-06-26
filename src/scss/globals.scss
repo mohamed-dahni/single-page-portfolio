@@ -1,0 +1,25 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+p {
+  color: var(--clr-medium-brown);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-light-cream, #FFF7F0);
+}
+
+.logo {
+  width: 48px;
+}

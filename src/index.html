@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+
+      <button class="btn btn-primary">Free Consultation</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="banner">
+      <div class="container pb-4 pt-3">
+        <div class="banner-content text-center mb-4">
+          <h1 class="fw-bold">Design solutions made easy</h1>
+          <p class="mb-0">With over ten years of experience in various design disciplines, I’m your one-stop shop for
+            your design needs.</p>
+        </div>
+
+        <div class="banner-illustrations">
+          <div class="illustration">
+            <img src="./images/pattern-graphic-design.svg" alt="">
+            Graphic Design
+          </div>
+          <div class="illustration">
+            <img src="./images/pattern-ui-ux.svg" alt="ui/ux">
+            UI/UX
+          </div>
+          <div class="illustration">
+            <img src="./images/pattern-apps.svg" alt="">
+            Apps
+          </div>
+          <div class="illustration">
+            <img src="./images/pattern-illustrations.svg" alt="">
+            Illustrations
+          </div>
+          <div class="illustration">
+            <img src="./images/pattern-photography.svg" alt="">
+            Photography
+          </div>
+          <div class="illustration">
+            <img src="./images/pattern-motion-graphics.svg" alt="">
+            Motions Graphics
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container py-5 d-flex flex-column gap-4">
+        <div class="left-part">
+          <img src="./images/image-amy.webp" alt="">
+        </div>
+        <div class="right-part text-center">
+          <h2 class="h3 fw-bold mb-3">I’m Amy, and I’d love to work on your next project</h2>
+          <p class="mb-3">I love working with others to create beautiful design solutions. I’ve designed everything from
+            brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+          <button class="btn btn-secondary">Free Consultation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="h3 fw-bold text-center mb-4">My Work</h2>
+
+        <div class="splide mb-2" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./images/image-slide-1.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/image-slide-2.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/image-slide-3.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/image-slide-4.jpg" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="./images/image-slide-5.jpg" alt="">
+              </li>                                                         
+            </ul>
+          </div>
+        </div>
+
+        <div class="arrows d-flex justify-content-center gap-3">
+          <button class="btn btn-arrow btn-arrow-prev">
+            <img src="./images/icon-arrow-left.svg" alt="">
+          </button>
+          <button class="btn btn-arrow btn-arrow-next">
+            <img src="./images/icon-arrow-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="container pt-5 pb-4">
+        <div class="py-5 px-4 text-white text-center" style="background-color: var(--clr-black); border-radius: 10px">
+          <h2 class="h3 mb-3 fw-bold">Book a call with me</h2>
+          <p class="mb-3 text-white fw-normal">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+          <button class="btn btn-secondary">Free Consultation</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+
+      <button class="btn btn-primary">Free Consultation</button>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
