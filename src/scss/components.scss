@@ -12,6 +12,7 @@
     color: var(--btn-color);
     text-transform: capitalize;
     transition: all .3s;
+    white-space: nowrap;
 }
 .btn:hover {
     background: var(--btn-hover-background);

@@ -20,6 +20,13 @@ body {
   background-color: var(--clr-light-cream, #FFF7F0);
 }
 
+.container {
+  @media (min-width: 992px) {
+    max-width: 890px;
+  }
+}
+  
+
 .logo {
   width: 48px;
 }

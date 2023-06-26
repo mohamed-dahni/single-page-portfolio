@@ -11,6 +11,22 @@
     grid-template-rows: repeat(6, 128px);
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+
+    @media (min-width: 576px) {
+        grid-template-areas: 
+                "a a b c"
+                "a a d d"
+                "e e f f";
+        grid-template-rows: repeat(3, 128px);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 992px) {
+        grid-template-areas: 
+                "a a b c d d"
+                "a a e e f f";
+        grid-template-rows: repeat(2, 128px);
+        grid-template-columns: repeat(6, 1fr);
+    }
     
     & > * {
         --padding-x: 13px;
@@ -58,8 +74,38 @@
 }
 
 /***** About ******/
-.about .left-part {
+.about {
+    position: relative;
+
+    .container {
+        display: grid;
+        align-items: center;
+        gap: 2rem;
+
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .left-part {
+        
+        img{
+            max-width: 300px;
+            margin-inline: auto;
     
+            @media (min-width: 576px) and (max-width: 767px) {
+               position: absolute;
+               max-width: 300px;
+               top: 50%; left: -20px;
+               transform: translateY(-50%);
+            }
+
+            @media (min-width: 768px) {
+                margin-inline: unset;
+                max-width: 330px;
+            }
+        }
+    }   
 }
 
 /***** Projects ******/

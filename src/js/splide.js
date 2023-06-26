@@ -5,7 +5,13 @@ const slide = new Splide( '.splide', {
     type   : 'loop',
     padding: '5rem',
     gap: '10px',
-    arrows: false
+    arrows: false,
+    mediaQuery: 'min',
+    breakpoints: {
+        767: {
+            fixedWidth: "450px",
+        }
+    }
 }).mount();
 
 const next = document.querySelector(".btn-arrow-next");
